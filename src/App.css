@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    border:0;
+    margin:0;
+    padding:0;
+}
+a{
+    text-decoration: none;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background:#FBEAEB;
+    flex-direction: column;
+    font-family: "Sour Gummy", sans-serif;
+}
+header .h1p{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color:#2F3C7E;
+    padding-bottom: 50vh;
+}
+header h1{
+    font-size: 96px;
+}
+header p{
+    font-size: 30px;
+}
+article{
+    font-family: "Nunito", sans-serif;
+    height: 100vh;
+    background:#FBEAEB;
+    color:#2F3C7E;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+}
+article p{
+    font-size:24px;
+    padding-top: 2%; 
+}
+article h1{
+    font-size:36px;
+}
+article .h1p{
+    text-align: center;
+    height: 100vh;
+    padding-top:5%;
+    padding-bottom:5%;
+    width:60%;
+    margin-left:auto;
+    margin-right:auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color:#2F3C7E;
+}
+main{
+    background-color: #FBEAEB;
+    color:#2F3C7E;
+    height:100vh;
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+    
+}
+.el2{
+    padding-top:10%;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: center;
+}
+.rank{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size:36px;
+    height: 50vh;
+    width:20vw;
+    background:#FBEAEB;
+    flex-direction:column;
+    
+}
+.rank p{
+    color:#FBEAEB;
+    text-decoration: none;
+}
+main h1{
+    padding-top:10%;
+    font-size:36px;
+}
+.rank:hover{
+    transition-duration: 750ms;
+    opacity: 1;
+	animation-name: fadeInOpacity;
+	animation-iteration-count: 1;
+	animation-timing-function: ease-in;
+	animation-duration: 2s;
+    background:#2F3C7E;
+    color:#FBEAEB;
+}
