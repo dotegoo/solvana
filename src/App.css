@@ -1,106 +1,201 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
-*{
-    border:0;
-    margin:0;
-    padding:0;
+
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-a{
+
+a {
     text-decoration: none;
 }
-header{
+
+header {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background:#FBEAEB;
+    background: #FBEAEB;
     flex-direction: column;
     font-family: "Sour Gummy", sans-serif;
+    text-align: center;
+    padding: 0 5%;
 }
-header .h1p{
+
+header .h1p {
     display: flex;
     align-items: center;
     flex-direction: column;
-    color:#2F3C7E;
+    color: #2F3C7E;
     padding-bottom: 50vh;
 }
-header h1{
+
+header h1 {
     font-size: 96px;
 }
-header p{
+
+header p {
     font-size: 30px;
 }
-article{
+
+article {
     font-family: "Nunito", sans-serif;
     height: 100vh;
-    background:#FBEAEB;
-    color:#2F3C7E;
+    background: #FBEAEB;
+    color: #2F3C7E;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content:space-between;
+    justify-content: space-between;
+    padding: 0 5%;
 }
-article p{
-    font-size:24px;
-    padding-top: 2%; 
+
+article p {
+    font-size: 24px;
+    padding-top: 2%;
 }
-article h1{
-    font-size:36px;
+
+article h1 {
+    font-size: 36px;
 }
-article .h1p{
+
+article .h1p {
     text-align: center;
-    height: 100vh;
-    padding-top:5%;
-    padding-bottom:5%;
-    width:60%;
-    margin-left:auto;
-    margin-right:auto;
+    height: auto;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    width: 60%;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     flex-direction: column;
-    color:#2F3C7E;
+    color: #2F3C7E;
 }
-main{
+
+main {
     background-color: #FBEAEB;
-    color:#2F3C7E;
-    height:100vh;
+    color: #2F3C7E;
+    height: auto;
+    min-height: 100vh;
     display: flex;
-    align-items:center;
+    align-items: center;
     flex-direction: column;
-    
+    padding: 0 5%;
 }
-.el2{
-    padding-top:10%;
+
+.el2 {
+    padding-top: 10%;
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
-.rank{
+
+.rank {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    font-size:36px;
+    font-size: 36px;
     height: 50vh;
-    width:20vw;
-    background:#FBEAEB;
-    flex-direction:column;
-    
+    width: 20vw;
+    background: #FBEAEB;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
 }
-.rank p{
-    color:#FBEAEB;
+
+.rank p {
+    color: #FBEAEB;
     text-decoration: none;
 }
-main h1{
-    padding-top:10%;
-    font-size:36px;
+
+main h1 {
+    padding-top: 10%;
+    font-size: 36px;
 }
-.rank:hover{
+
+.rank:hover {
     transition-duration: 750ms;
     opacity: 1;
-	animation-name: fadeInOpacity;
-	animation-iteration-count: 1;
-	animation-timing-function: ease-in;
-	animation-duration: 2s;
-    background:#2F3C7E;
-    color:#FBEAEB;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+    background: #2F3C7E;
+    color: #FBEAEB;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    header h1 {
+        font-size: 72px;
+    }
+
+    header p {
+        font-size: 24px;
+    }
+
+    .rank {
+        width: 40vw;
+        height: auto;
+    }
+
+    article h1 {
+        font-size: 30px;
+    }
+
+    article p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 56px;
+    }
+
+    header p {
+        font-size: 20px;
+    }
+
+    .rank {
+        width: 80vw;
+    }
+
+    .el2 {
+        flex-direction: column;
+    }
+
+    article .h1p {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 40px;
+    }
+
+    header p {
+        font-size: 18px;
+    }
+
+    article h1 {
+        font-size: 24px;
+    }
+
+    article p {
+        font-size: 16px;
+    }
+
+    main h1 {
+        font-size: 24px;
+    }
+    .rank {
+        font-size: 24px;
+        padding: 10px;
+    }
 }
